@@ -1,6 +1,104 @@
 ﻿@{
     ViewData["Title"] = "Privacy Policy";
 }
-<h1>@ViewData["Title"]</h1>
+<div class="container mt-4">
+    <h1 class="">@ViewData["Title"]</h1>
+    <div class="row">
+        <div class="col-lg-8">
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h2 class="h5">Overview</h2>
+                    <p class="mb-0">TodoApp is a simple task manager. This page explains what information we collect,
+                        why we collect it, and how we protect it.</p>
+                </div>
+            </div>
 
-<p>Use this page to detail your site's privacy policy.</p>
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h2 class="h5">Data we collect</h2>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Account information (email, display name)</li>
+                        <li class="list-group-item">Task data (titles, descriptions, due dates, completion status)</li>
+                        <li class="list-group-item">Usage and diagnostic data (app usage, error reports)</li>
+                        <li class="list-group-item">Cookies and local storage for session management and preferences
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h2 class="h5">How we use your data</h2>
+                    <p class="mb-2">We use collected data to:</p>
+                    <ul>
+                        <li>Provide and maintain your tasks and account features</li>
+                        <li>Synchronize task state across devices (if enabled)</li>
+                        <li>Improve app performance and fix issues</li>
+                        <li>Send important account or security related notifications</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h2 class="h5">Cookies & local storage</h2>
+                    <p class="mb-0">We use cookies and browser storage for authentication, session management, and
+                        remembering user preferences. You can clear these from your browser at any time, but some
+                        features may stop working until you sign in again.</p>
+                </div>
+            </div>
+
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h2 class="h5">Security</h2>
+                    <p class="mb-0">We protect data using industry-standard measures such as TLS in transit and access
+                        controls on backend services. While we strive to protect your data, no system can be 100%
+                        secure; report any suspected issues to our support address below.</p>
+                </div>
+            </div>
+
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h2 class="h5">Third-party services</h2>
+                    <p class="mb-0">We may use third-party services (e.g., analytics, authentication providers) to
+                        operate and improve the app. These providers have their own privacy policies; we recommend
+                        reviewing them if you interact with those services.</p>
+                </div>
+            </div>
+
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h2 class="h5">Your rights</h2>
+                    <ul>
+                        <li>Access and correct your account information</li>
+                        <li>Export your task data</li>
+                        <li>Request account deletion (which removes your personal data from our systems)</li>
+                    </ul>
+                    <p class="mb-0">To exercise these rights, contact us using the address below.</p>
+                </div>
+            </div>
+
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h2 class="h5">Contact</h2>
+                    <p class="mb-1">Questions or requests: <a
+                            href="mailto:support@todoapp.example">support@todoapp.example</a></p>
+                    <p class="text-muted small mb-0">Last updated: @DateTime.Now.ToString("MMMM d, yyyy")</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4">
+            <div class="card sticky-top">
+                <div class="card-body">
+                    <h3 class="h6">Quick facts</h3>
+                    <ul class="list-unstyled mb-0">
+                        <li><strong>Data minimization:</strong> We only store what's necessary.</li>
+                        <li><strong>Retention:</strong> Data is retained until you delete your account.</li>
+                        <li><strong>Encryption:</strong> TLS for all network traffic.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
