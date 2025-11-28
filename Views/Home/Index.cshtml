@@ -2,7 +2,78 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="container my-5">
+    <div class="row g-4 align-items-start">
+        <div class="col-lg-7">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h2 class="card-title">Welcome to TodoApp</h2>
+                    <p class="card-text lead">A simple, fast way to organize your tasks and get things done. Manage tasks, set deadlines, and track progress — all in one place.</p>
+                    <p>Whether you're planning your day or managing a project, TodoApp helps you stay focused and productive.</p>
+                    <a class="btn btn-primary btn-lg" href="/Todos">Get Started</a>
+                    <a class="btn btn-outline-secondary btn-lg ms-2" href="/Home/Privacy">Learn More</a>
+                </div>
+            </div>
+
+            <div class="mt-4">
+                <div class="row row-cols-1 row-cols-md-3 g-3">
+                    <div class="col">
+                        <div class="card h-100 border-0">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Create Tasks</h5>
+                                <p class="card-text small text-muted">Add items quickly with titles, details and due dates.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 border-0">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Organize</h5>
+                                <p class="card-text small text-muted">Group tasks by project, priority or deadline.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100 border-0">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Track Progress</h5>
+                                <p class="card-text small text-muted">Mark tasks complete and see progress at a glance.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-5">
+            <div class="card border-0 bg-light h-100 shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">Quick Start</h5>
+                    <ol class="small">
+                        <li>Create your first task.</li>
+                        <li>Set a due date or priority.</li>
+                        <li>Organize into lists or projects.</li>
+                        <li>Mark complete when finished.</li>
+                    </ol>
+
+                    <hr />
+
+                    <h6 class="mb-2">Tips</h6>
+                    <ul class="small">
+                        <li>Use short, actionable titles.</li>
+                        <li>Break large tasks into smaller steps.</li>
+                        <li>Review your list daily to stay on track.</li>
+                    </ul>
+
+                    <div class="mt-4">
+                        <a class="btn btn-success w-100" href="/Todos/Create">Add a Task</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-3 text-muted small">
+                <p class="mb-0">Built with ASP.NET Core and Bootstrap for a responsive, accessible experience.</p>
+            </div>
+        </div>
+    </div>
 </div>
